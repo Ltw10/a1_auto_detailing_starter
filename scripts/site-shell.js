@@ -1,4 +1,4 @@
-import { siteConfig } from "./content.js";
+import { logoUrl, siteConfig } from "./content.js";
 
 function normalizePath(path) {
   return path.split("/").pop() || "index.html";
@@ -16,7 +16,7 @@ function buildHeader() {
   return `
     <div class="site-wrap nav-wrap">
       <a class="brand" href="index.html" aria-label="${siteConfig.name} home">
-        <img class="brand-logo" src="assets/a1_logo.png" alt="A1 Auto Detailing logo" />
+        <img class="brand-logo" src="${logoUrl}" alt="A1 Auto Detailing logo" />
         <span>${siteConfig.name}</span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -30,7 +30,7 @@ function buildFooter() {
   return `
     <div class="site-wrap footer-grid">
       <section>
-        <img class="footer-logo" src="assets/a1_logo.png" alt="A1 Auto Detailing logo" />
+        <img class="footer-logo" src="${logoUrl}" alt="A1 Auto Detailing logo" />
         <h3>${siteConfig.name}</h3>
         <p>${siteConfig.tagline}</p>
       </section>

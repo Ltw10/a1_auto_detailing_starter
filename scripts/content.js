@@ -1,3 +1,5 @@
+const assetUrl = (fileName) => new URL(`../assets/${fileName}`, import.meta.url).href;
+
 export const siteConfig = {
   name: "A1 Auto Detailing",
   tagline: "Precision, pride, and protection in every detail.",
@@ -22,6 +24,8 @@ export const siteConfig = {
   },
 };
 
+export const logoUrl = assetUrl("a1_logo.png");
+
 export const services = [
   "Interior Detailing",
   "Exterior Wash & Protection",
@@ -34,29 +38,29 @@ export const services = [
 export const beforeAfterSets = [
   {
     title: "Ford Truck Interior",
-    before: "assets/ford_truck_front_seat_before.jpeg",
-    after: "assets/ford_truck_front_seat_after.jpeg",
+    before: assetUrl("ford_truck_front_seat_before.jpeg"),
+    after: assetUrl("ford_truck_front_seat_after.jpeg"),
   },
   {
     title: "Toyota Console Refresh",
-    before: "assets/toyota_console_before.jpeg",
-    after: "assets/toyota_console_after.jpeg",
+    before: assetUrl("toyota_console_before.jpeg"),
+    after: assetUrl("toyota_console_after.jpeg"),
   },
   {
     title: "Jeep Transformation",
-    before: "assets/jeep_before3.jpeg",
-    after: "assets/jeep_after3.jpeg",
+    before: assetUrl("jeep_before3.jpeg"),
+    after: assetUrl("jeep_after3.jpeg"),
   },
 ];
 
 export const communityImages = [
-  "assets/crosley_community.jpeg",
-  "assets/girl_community.jpeg",
-  "assets/luke_community.jpeg",
-  "assets/luke_trevor_community.jpeg",
-  "assets/mason_community.jpeg",
-  "assets/trevor_logan_community.jpeg",
-  "assets/vincents_community.jpeg",
+  assetUrl("crosley_community.jpeg"),
+  assetUrl("girl_community.jpeg"),
+  assetUrl("luke_community.jpeg"),
+  assetUrl("luke_trevor_community.jpeg"),
+  assetUrl("mason_community.jpeg"),
+  assetUrl("trevor_logan_community.jpeg"),
+  assetUrl("vincents_community.jpeg"),
 ];
 
 export const detailPackages = [
