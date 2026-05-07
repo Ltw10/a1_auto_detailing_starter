@@ -11,8 +11,8 @@ export const siteConfig = {
   contact: {
     phone: "(859) 786-9138",
     phoneHref: "tel:+18597869138",
-    email: "hello@a1autodetailing.com",
-    emailHref: "mailto:hello@a1autodetailing.com",
+    email: "a1autodetailing2021@gmail.com",
+    emailHref: "mailto:a1autodetailing2021@gmail.com",
     serviceArea: "Serving Northern Kentucky and Cincinnati communities",
     facebook: "https://www.facebook.com/a1.autodetailing20/",
     instagram: "https://www.instagram.com/a1.autodetailing/",
