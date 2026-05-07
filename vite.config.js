@@ -1,10 +1,9 @@
 import { defineConfig } from "vite";
 
 const repoName = "a1_auto_detailing_starter";
-const isGithubActions = process.env.GITHUB_ACTIONS === "true";
 
 export default defineConfig({
-  base: isGithubActions ? `/${repoName}/` : "/",
+  base: `/${repoName}/`,
   build: {
     rollupOptions: {
       input: {
